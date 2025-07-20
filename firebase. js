@@ -1,0 +1,16 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB-Ua0zdemo-only-do-not-use",
+  authDomain: "demo-chat-app.firebaseapp.com",
+  projectId: "demo-chat-app",
+  storageBucket: "demo-chat-app.appspot.com",
+  messagingSenderId: "1234567890",
+  appId: "1:1234567890:web:demoapp"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { db };
